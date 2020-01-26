@@ -8,6 +8,7 @@ autoload -U $ZSH/functions/*(:t)
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+ZSH_THEME="bira"
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
