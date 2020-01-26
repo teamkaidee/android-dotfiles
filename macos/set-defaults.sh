@@ -131,3 +131,13 @@ chflags nohidden ~/Library
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+
+###############################################################################
+# Energy saving                                                               #
+###############################################################################
+
+# Sleep the display after 15 minutes
+sudo pmset -a displaysleep 15
+
