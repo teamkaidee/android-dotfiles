@@ -58,4 +58,6 @@ then
     fi
 	cp ./settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 	success "New user config has been written. Please restart your VSC."
+else
+    success "skipped installing Visual Studio Code"
 fi

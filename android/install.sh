@@ -27,8 +27,14 @@ then
     success "Android SDK licences copied."
 fi
 
-$ANDROID_HOME/tools/bin/sdkmanager "platform-tools" "platforms;android-28"
+$ANDROID_HOME/tools/bin/sdkmanager "platform-tools" "platforms;android-28" "platforms;android-29"
 success 'Android SDK have been updated.'
 
-brew cask install android-studio
-success 'Android Studio has been installed'
+if test ! -e "/Applications/Android Studio.app"
+then
+    brew cask install android-studio
+    success 'Android Studio has been installed'
+else
+    success "skipped installing Android Studio"
+fi
+
