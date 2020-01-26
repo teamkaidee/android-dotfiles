@@ -3,5 +3,5 @@ source ./script/lib
 
 set -e
 
-info "Installing pycharm"
+info "Installing pycharm-ce"
 brew cask install pycharm-ce
