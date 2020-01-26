@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./script/lib
+source $ZSH/script/lib
 
 if test ! -e "/Applications/Slack.app"
 then

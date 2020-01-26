@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-source ./script/lib
+source $ZSH/script/lib
 
 brew_cask_install_by_app Alfred\ 4 Alfred

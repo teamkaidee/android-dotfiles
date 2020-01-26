@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./script/lib
+source $ZSH/script/lib
 
 if test ! -e "/Applications/iTerm.app"
 then
