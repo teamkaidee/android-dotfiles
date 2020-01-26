@@ -3,5 +3,8 @@ source ./script/lib
 
 set -e
 
-info "Installing alfred"
-brew cask install alfred
+if test ! -e "/Applications/Alfred 4.app"
+then
+    info "Installing alfred"
+    brew cask install alfred
+fi

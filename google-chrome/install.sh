@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 source ./script/lib
 
-set -e
-
-info "Installing google-chrome"
-brew cask install google-chrome
+if test ! -e "/Applications/Google Chrome.app"
+then
+    info "Installing google-chrome"
+    brew cask install google-chrome
+fi

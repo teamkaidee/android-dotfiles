@@ -3,5 +3,8 @@ source ./script/lib
 
 set -e
 
-info "Installing pycharm-ce"
-brew cask install pycharm-ce
+if test ! -e "/Applications/PyCharm CE.app"
+then
+    info "Installing pycharm-ce"
+    brew cask install pycharm-ce
+fi

@@ -1,5 +1,6 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+export ANDROID_HOME="/usr/local/share/android-sdk"
 
 fpath=($ZSH/functions $fpath)
 

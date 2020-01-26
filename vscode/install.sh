@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 source ./script/lib
 
-set -e
-
 if test ! $(which code)
 then
 	info "Installing Visual Studio Code"
