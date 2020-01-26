@@ -58,8 +58,8 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 # Dock                                                                        #
 ###############################################################################
 
-# Set the icon size of Dock items to 23 pixels
-defaults write com.apple.dock tilesize -int 23
+# Set the icon size of Dock items to 43 pixels
+defaults write com.apple.dock tilesize -int 43
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -91,6 +91,7 @@ dockutil --no-restart --add "/Applications/Android Studio.app"
 dockutil --no-restart --add "/Applications/IntelliJ IDEA CE.app"
 dockutil --no-restart --add "/Applications/Slack.app"
 dockutil --no-restart --add "/Applications/System Preferences.app"
+killall Dock
 
 ###############################################################################
 # Finder                                                                      #
