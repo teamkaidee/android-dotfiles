@@ -90,8 +90,8 @@ dockutil --no-restart --add "/Applications/Visual Studio Code.app"
 dockutil --no-restart --add "/Applications/Android Studio.app"
 dockutil --no-restart --add "/Applications/IntelliJ IDEA CE.app"
 dockutil --no-restart --add "/Applications/Slack.app"
-dockutil --no-restart --add "/Applications/System Preferences.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
+dockutil --no-restart --add "/Applications/System Preferences.app"
 killall Dock
 
 ###############################################################################
