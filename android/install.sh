@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./script/lib
+source $ZSH/script/lib
 
 if test ! $(which java)
 then
@@ -40,10 +40,4 @@ $ANDROID_HOME/tools/bin/sdkmanager "extras;google;google_play_services"
 $ANDROID_HOME/tools/bin/sdkmanager "extras;google;m2repository"
 success 'Android SDK have been updated.'
 
-if test ! -e "/Applications/Android Studio.app"
-then
-    brew cask install android-studio
-    success 'Android Studio has been installed'
-else
-    success "skipped installing Android Studio"
-fi
+brew_cask_install_by_app Android\ Studio android-studio

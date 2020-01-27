@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-source ./script/lib
+source $ZSH/script/lib
 
-if test ! -e "/Applications/Slack.app"
-then
-    info "Installing slack"
-    brew cask install slack
-else
-    success "skipped installing slack"
-fi
+brew_cask_install_by_app Slack slack

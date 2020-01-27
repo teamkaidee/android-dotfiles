@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 source $ZSH/script/lib
 
-brew_cask_install_by_app Alfred\ 4 Alfred
+brew_cask_install_by_cli docker docker

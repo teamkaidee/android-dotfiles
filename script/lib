@@ -17,3 +17,27 @@ fail () {
   echo ''
   exit
 }
+
+brew_cask_install_by_app () {
+  export APP_NAME=$1
+  export APP_CLI=$2
+  if test ! -e "/Applications/$APP_NAME.app"
+  then
+      info "Installing $APP_CLI"
+      brew cask install $APP_CLI
+  else
+      success "skipped installing $APP_NAME"
+  fi
+}
+
+brew_cask_install_by_cli () {
+  export APP_CLI=$1
+  export APP_NAME=$2
+  if test ! $(which $APP_CLI)
+  then
+      info "Installing $APP_NAME"
+      brew cask install $APP_NAME
+  else
+      success "skipped installing $APP_NAME"
+  fi
+}
