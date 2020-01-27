@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
 source $ZSH/script/lib
 
-if test ! -e "/Applications/iTerm.app"
-then
-    info "Installing iterm2"
-    brew cask install iterm2
-else
-    success "skipped installing iterm2"
-fi
+brew_cask_install_by_app iTerm iterm2
